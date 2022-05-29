@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./main.css" />
+    <script
+      src="https://kit.fontawesome.com/9e1a07a81c.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <article id="app">
+      <ul class="options">
+        <li>
+          <button type="button" data-command="h1">H1</button>
+        </li>
+        <li>
+          <button type="button" data-command="h2">H2</button>
+        </li>
+        <li>
+          <button type="button" data-command="h3">H3</button>
+        </li>
+        <li>
+          <button type="button" data-command="p">P</button>
+        </li>
+        <li>
+          <button type="button" data-command="strong">
+            <i class="fa-solid fa-bold"></i>
+          </button>
+        </li>
+        <li>
+          <button type="button" data-command="em">
+            <i class="fa-solid fa-italic"></i>
+          </button>
+        </li>
+        <li>
+          <button type="button" data-command="u">
+            <i class="fa-solid fa-underline"></i>
+          </button>
+        </li>
+        <li>
+          <!-- del tag : 삭제된 텍스트를 나타냅니다 -->
+          <button type="button" data-command="del">
+            <i class="fa-solid fa-strikethrough"></i>
+          </button>
+        </li>
+        <li>
+          <button type="button" data-command="style_left">
+            <i class="fa-solid fa-align-left"></i>
+          </button>
+        </li>
+        <li>
+          <button type="button" data-command="style_center">
+            <i class="fa-solid fa-align-center"></i>
+          </button>
+        </li>
+        <li>
+          <button type="button" data-command="style_right">
+            <i class="fa-solid fa-align-right"></i>
+          </button>
+        </li>
+        <li>
+          <button type="button" data-command="style_justify">
+            <i class="fa-solid fa-align-justify"></i>
+          </button>
+        </li>
+      </ul>
+      <!-- contenteditable 속성은 요소의 편집 가능 여부를 나타냅니다. -->
+      <div class="editor" contenteditable="true">
+        <h1>나만의 wysiwyg 에디터 입니다!</h1>
+        <p>Hello World!</p>
+      </div>
+    </article>
+    <script src="./main.js"></script>
+  </body>
+</html>
